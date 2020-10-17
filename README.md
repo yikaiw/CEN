@@ -4,7 +4,7 @@ By Yikai Wang, Wenbing Huang, Fuchun Sun, Tingyang Xu, Yu Rong, Junzhou Huang.
 
 This repository is an official PyTorch implementation of "Deep Multimodal Fusion by Channel Exchanging", accepted by NeurIPS 2020. The basic method and applications are introduced as belows.
 
-<p align="center"><img src="assets/introduction.png" width="650" /></p>
+<p align="center"><img src="assets/introduction.png" width="820" /></p>
 
 ## Dependencies
 
