@@ -2,7 +2,7 @@
 
 By Yikai Wang, Wenbing Huang, Fuchun Sun, Tingyang Xu, Yu Rong, Junzhou Huang.
 
-This repository is an official PyTorch implementation of "Deep Multimodal Fusion by Channel Exchanging", accepted by NeurIPS 2020. The basic method and applications are introduced as belows.
+This repository is an official PyTorch implementation of "[Deep Multimodal Fusion by Channel Exchanging](https://arxiv.org/abs/2011.05005)", accepted by NeurIPS 2020. The basic method and applications are introduced as belows.
 
 <p align="center"><img src="assets/introduction.png" width="820" /></p>
 
@@ -56,7 +56,7 @@ cd image2image_translation
 ```
 Training script, an example of translation from Shade (2) and Texture (7) to RGB (0) (could reach 62~63 FID score),
 ```
-python main.py --gpu 0 --img-types 2 7 0
+python main.py --gpu 0 --img-types 2 7 0 -c checkpoint_name
 ```
 This script will auto-evaluate on the validation dataset every 5 training epochs. Predicted images will be automatically saved.
 
