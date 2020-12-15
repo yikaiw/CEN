@@ -24,12 +24,12 @@ HIGH_SCALE = 2.0
 IGNORE_LABEL = 255
 
 # ENCODER PARAMETERS
-ENC = '101'
+ENC = '101'  # ResNet101
 ENC_PRETRAINED = True  # pre-trained on ImageNet or randomly initialised
 
 # GENERAL
 FREEZE_BN = True
-NUM_SEGM_EPOCHS = [100] * 3
+NUM_SEGM_EPOCHS = [100] * 3  # [150] * 3 if using ResNet152 as backbone
 PRINT_EVERY = 10
 RANDOM_SEED = 42
 VAL_EVERY = 5  # how often to record validation scores

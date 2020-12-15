@@ -63,7 +63,7 @@ class DeconvBlock(nn.Module):
                  padding=1, instance_norm=True, dropout=False):
         super(DeconvBlock, self).__init__()
         self.deconv = ModuleParallel(nn.ConvTranspose2d(
-            input_size, output_size,  kernel_size, stride, padding))
+            input_size, output_size, kernel_size, stride, padding))
         self.insnorm_deconv = InstanceNorm2dParallel(output_size)
         self.drop = ModuleParallel(nn.Dropout(0.5))
         self.relu = ModuleParallel(nn.ReLU(True))

@@ -48,7 +48,6 @@ parser.add_argument('-l', '--lamda', type=float, default=1e-3,
                     help='lamda for L1 norm on BN scales.')
 parser.add_argument('-t', '--insnorm-threshold', type=float, default=1e-2,
                     help='threshold for slimming BNs')
-parser.add_argument('--share', type=bool, default=True)
 parser.add_argument('--enc', default=[0], type=int, nargs='+')
 parser.add_argument('--dec', default=[0], type=int, nargs='+')
 params = parser.parse_args()
@@ -78,7 +77,6 @@ cf.num_parallel = num_parallel
 cf.use_exchange = params.exchange == 1
 cf.insnorm_threshold = params.insnorm_threshold
 cf.enc, cf.dec = params.enc, params.dec
-cf.share = params.share
 
 # Data pre-processing
 transform = transforms.Compose([transforms.Resize(params.input_size),
