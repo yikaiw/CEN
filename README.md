@@ -2,11 +2,13 @@
 
 By Yikai Wang, Wenbing Huang, Fuchun Sun, Tingyang Xu, Yu Rong, Junzhou Huang.
 
-[[Paper]](https://arxiv.org/pdf/2011.05005.pdf) [[Slides]](https://yikaiw.github.io/projects/NeurIPS20-CEN/slides.pdf) [[Poster]](https://yikaiw.github.io/projects/NeurIPS20-CEN/poster.pdf) [[BibTex]](https://yikaiw.github.io/projects/NeurIPS20-CEN/cite.txt)
+[**[Paper]** (full version with proofs and visualizations)](https://arxiv.org/pdf/2011.05005.pdf)
+
+[[Slides]](https://yikaiw.github.io/projects/NeurIPS20-CEN/slides.pdf) [[Poster]](https://yikaiw.github.io/projects/NeurIPS20-CEN/poster.pdf) [[BibTex]](https://yikaiw.github.io/projects/NeurIPS20-CEN/cite.txt)
 
 This repository is an official PyTorch implementation of "Deep Multimodal Fusion by Channel Exchanging", in NeurIPS 2020. The basic method and applications are introduced as belows:
 
-<p align="center"><img src="https://yikaiw.github.io/projects/NeurIPS20-CEN/introduction.png" width="820" /></p>
+<p align="center"><img src="intro.png" width="820" /></p>
 
 
 If you find our work useful for your research, please consider citing the following paper.
