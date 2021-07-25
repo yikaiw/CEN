@@ -1,4 +1,6 @@
 import os, argparse
+import warnings
+warnings.filterwarnings('ignore')
 import numpy as np
 import torch
 from tqdm import tqdm
@@ -236,7 +238,13 @@ for epoch in range(params.num_epochs):
     G_avg_losses.append(G_avg_loss)
 
     torch.save(insnorm_params, '{}/insnorm_params/insnorm_params_{:03d}.pth'.format(model_dir, epoch))
-    
+    if params.lamda > 0:
+        slim_params_list = []
+        for slim_param in slim_params:
+            slim_params_list.extend(slim_param.cpu().data.numpy())
+        slim_params_list = np.array(sorted(slim_params_list))
+        print('Epoch %d, portion of slim_params < %.e: %.4f' % (epoch, params.insnorm_threshold, \
+            sum(slim_params_list < params.insnorm_threshold) / len(slim_params_list) / 2), flush=True)
     if epoch % params.val_every == 0:
         update_best_img = False
         l1_avg_losses, l2_avg_losses, fids, kids, alpha_soft = evaluate(G, epoch, training=True)

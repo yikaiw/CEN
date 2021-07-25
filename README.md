@@ -16,19 +16,21 @@ If you find our work useful for your research, please consider citing the follow
 @inproceedings{wang2020cen,
   title={Deep Multimodal Fusion by Channel Exchanging},
   author={Wang, Yikai and Huang, Wenbing and Sun, Fuchun and Xu, Tingyang and Rong, Yu and Huang, Junzhou},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2020}
 }
 ```
 
 ## Dependencies
 
-```
-python>=3.6
-pytorch>=1.0.0
-scikit-learn>=0.20.2
-opencv-python>=4.0
-```
+- python==3.6.2
+- pytorch==1.0.0
+- torchvision==0.2.2
+- imageio==2.4.1
+- numpy==1.16.2
+- scikit-learn==0.20.2
+- scipy==1.1.0
+- opencv-python==4.0
 
 ## Datasets
 
@@ -98,7 +100,7 @@ For training with other modalities, the index for each img-type is described as 
 7: 'edge_texture', 8: 'segment_unsup2d', 9: 'segment_unsup25d'
 ```
 
-Full quantitative results are referred to the paper.
+Full quantitative results are provided in the paper.
 
 ## License
 
