@@ -21,16 +21,6 @@ If you find our work useful for your research, please consider citing the follow
 }
 ```
 
-## Dependencies
-
-- python==3.6.2
-- pytorch==1.0.0
-- torchvision==0.2.2
-- imageio==2.4.1
-- numpy==1.16.2
-- scikit-learn==0.20.2
-- scipy==1.1.0
-- opencv-python==4.0
 
 ## Datasets
 
@@ -39,6 +29,19 @@ For semantic segmentation task on NYUDv2 ([official dataset](https://cs.nyu.edu/
 For image-to-image translation task, we use the sample dataset of [Taskonomy](http://taskonomy.stanford.edu/), where a link to download the sample dataset is [here](https://github.com/alexsax/taskonomy-sample-model-1.git).
 
 Please modify the data paths in the codes, where we add comments 'Modify data path'.
+
+
+## Dependencies
+```
+python==3.6.2
+pytorch==1.0.0
+torchvision==0.2.2
+imageio==2.4.1
+numpy==1.16.2
+scikit-learn==0.20.2
+scipy==1.1.0
+opencv-python==4.0.0
+```
 
 
 ## Semantic Segmentation
