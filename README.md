@@ -55,6 +55,10 @@ Training script for segmentation with RGB and Depth input, the default setting u
 ```
 python main.py --gpu 0 -c exp_name  # or --gpu 0 1 2
 ```
+Or, for training RefineNet with ResNet152,
+```
+python main.py --gpu 0 --enc 152 --num-epoch 150 150 150 -c exp_name  # or --gpu 0 1 2
+```
 Evaluation script,
 ```
 python main.py --gpu 0 --resume path_to_pth --evaluate  # optionally use --save-img to visualize results
