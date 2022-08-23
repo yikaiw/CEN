@@ -6,7 +6,7 @@ By Yikai Wang, Wenbing Huang, Fuchun Sun, Tingyang Xu, Yu Rong, Junzhou Huang.
 
 [[Slides]](https://yikaiw.github.io/projects/NeurIPS20-CEN/slides.pdf) [[Poster]](https://yikaiw.github.io/projects/NeurIPS20-CEN/poster.pdf) [[BibTex]](https://yikaiw.github.io/projects/NeurIPS20-CEN/cite.txt)
 
-This repository is an official PyTorch implementation of "Deep Multimodal Fusion by Channel Exchanging", in NeurIPS 2020. The basic method and applications are introduced as belows:
+This repository is an official PyTorch implementation of "Deep Multimodal Fusion by Channel Exchanging", in NeurIPS 2020. The basic method and applications are introduced as follows:
 
 <p align="center"><img src="intro.png" width="820" /></p>
 
@@ -100,7 +100,7 @@ code_root/ckpt/exp_name/results
   └── real    # ground truth output
 ```
 
-For training with other modalities, the index for each img-type is described as belows, and also in Line 69 of ```main.py```.
+For training with other modalities, the index for each img-type is described as follows, and also in Line 69 of ```main.py```.
 ```
 0: 'rgb', 1: 'normal', 2: 'reshading', 3: 'depth_euclidean', 
 4: 'depth_zbuffer', 5: 'principal_curvature', 6: 'edge_occlusion', 
