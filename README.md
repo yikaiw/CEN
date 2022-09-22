@@ -6,18 +6,25 @@ By Yikai Wang, Wenbing Huang, Fuchun Sun, Tingyang Xu, Yu Rong, Junzhou Huang.
 
 [[Slides]](https://yikaiw.github.io/projects/NeurIPS20-CEN/slides.pdf) [[Poster]](https://yikaiw.github.io/projects/NeurIPS20-CEN/poster.pdf) [[BibTex]](https://yikaiw.github.io/projects/NeurIPS20-CEN/cite.txt)
 
-This repository is an official PyTorch implementation of "Deep Multimodal Fusion by Channel Exchanging", in NeurIPS 2020. The basic method and applications are introduced as follows:
+This repository is an official PyTorch implementation of "Deep Multimodal Fusion by Channel Exchanging", in NeurIPS 2020. Its extension has been accepted by [TPAMI 2022](https://arxiv.org/pdf/2112.02252.pdf). The basic method and applications are introduced as follows:
 
 <p align="center"><img src="intro.png" width="820" /></p>
 
 
-If you find our work useful for your research, please consider citing the following paper.
+If you find our work useful for your research, please consider citing the following papers.
 ```
 @inproceedings{wang2020cen,
   title={Deep Multimodal Fusion by Channel Exchanging},
   author={Wang, Yikai and Huang, Wenbing and Sun, Fuchun and Xu, Tingyang and Rong, Yu and Huang, Junzhou},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2020}
+}
+
+@article{wang2022cenpami,
+  title={Channel Exchanging Networks for Multimodal and Multitask Dense Image Prediction},
+  author={Wang, Yikai and Sun, Fuchun and Huang, Wenbing and He, Fengxiang and Tao, Dacheng},
+  journal={IEEE Transaction on Pattern Analysis and Machine Intelligence (TPAMI)},
+  year={2022}
 }
 ```
 
