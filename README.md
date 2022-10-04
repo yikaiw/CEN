@@ -6,7 +6,9 @@ By Yikai Wang, Wenbing Huang, Fuchun Sun, Tingyang Xu, Yu Rong, Junzhou Huang.
 
 [[Slides]](https://yikaiw.github.io/projects/NeurIPS20-CEN/slides.pdf) [[Poster]](https://yikaiw.github.io/projects/NeurIPS20-CEN/poster.pdf) [[BibTex]](https://yikaiw.github.io/projects/NeurIPS20-CEN/cite.txt)
 
-This repository is an official PyTorch implementation of "Deep Multimodal Fusion by Channel Exchanging", in NeurIPS 2020. Its extension for multimodal and multitask learning has been accepted by [TPAMI 2022](https://ieeexplore.ieee.org/document/9906429) ([Arxiv](https://arxiv.org/pdf/2112.02252.pdf)). The basic method and applications are introduced as follows:
+This repository is an official PyTorch implementation of "Deep Multimodal Fusion by Channel Exchanging", in NeurIPS 2020. Its extension for multimodal and multitask learning has been accepted by [TPAMI 2022](https://ieeexplore.ieee.org/document/9906429) ([Arxiv](https://arxiv.org/pdf/2112.02252.pdf)). 
+
+The basic method and applications are introduced as follows:
 
 <p align="center"><img src="intro.png" width="820" /></p>
 
@@ -71,12 +73,13 @@ Evaluation script,
 python main.py --gpu 0 --resume path_to_pth --evaluate  # optionally use --save-img to visualize results
 ```
 
-Checkpoint models, training logs and the **single-scale** performance on NYUDv2 (with RefineNet) are provided as follows:
+Checkpoint models, training logs and the **single-scale** performance on NYUDv2 (with RefineNet) are provided as follows. We also provide an additional comparison with our ViT-based [TokenFusion](https://github.com/yikaiw/TokenFusion) in CVPR 2022:
 
-| Backbone | Pixel Acc. (%) | Mean Acc. (%) | Mean IoU (%) | Download | 
-|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
-| ResNet101 | 76.2 | 62.8 | 51.1 | [Google Drive](https://drive.google.com/drive/folders/1wim_cBG-HW0bdipwA1UbnGeDwjldPIwV?usp=sharing)|
-| ResNet152 | 77.0 | 64.4 | 51.6 | [Google Drive](https://drive.google.com/drive/folders/1DGF6vHLDgBgLrdUNJOLYdoXCuEKbIuRs?usp=sharing)|
+| Method | Backbone | Pixel Acc. (%) | Mean Acc. (%) | Mean IoU (%) | Download | 
+|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
+|CEN| ResNet101 | 76.2 | 62.8 | 51.1 | [Google Drive](https://drive.google.com/drive/folders/1wim_cBG-HW0bdipwA1UbnGeDwjldPIwV?usp=sharing)|
+|CEN| ResNet152 | 77.0 | 64.4 | 51.6 | [Google Drive](https://drive.google.com/drive/folders/1DGF6vHLDgBgLrdUNJOLYdoXCuEKbIuRs?usp=sharing)|
+|TokenFusion| SegFormer-B3 | 78.7 | 67.5 | 54.8 | [Google Drive](https://drive.google.com/drive/folders/14fi8aABFYqGF7LYKHkiJazHA58OBW1AW?usp=sharing)|
 
 
 ## Image-to-Image Translation
@@ -115,6 +118,14 @@ For training with other modalities, the index for each img-type is described as 
 ```
 
 Full quantitative results are provided in the paper.
+
+Compared with ViT-based [TokenFusion](https://github.com/yikaiw/TokenFusion) in CVPR 2022:
+
+| Method | Task | FID | KID | Download | 
+|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
+| CEN |Texture+Shade->RGB | 62.6 | 1.65 | - |
+| TokenFusion | Texture+Shade->RGB | 45.5 | 1.00 | [Google Drive](https://drive.google.com/drive/folders/1vkcDv5bHKXZKxCg4dC7R56ts6nLLt6lh?usp=sharing)|
+
 
 ## License
 
